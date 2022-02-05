@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[13014],{55474:function(e){e.exports=JSON.parse('{"permalink":"/blog/tags/adoption","page":1,"postsPerPage":5,"totalPages":1,"totalCount":2,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

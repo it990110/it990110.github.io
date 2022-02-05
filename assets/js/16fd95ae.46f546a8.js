@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[89655],{62940:function(e){e.exports=JSON.parse('{"permalink":"/blog/tags/endi","page":1,"postsPerPage":5,"totalPages":1,"totalCount":1,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
