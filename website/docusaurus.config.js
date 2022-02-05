@@ -527,7 +527,8 @@ const config = {
           height: 51,
           href: 'https://opensource.facebook.com',
         },
-        copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Gitcoins, Inc. Built with Docusaurus.`,
+        copyright: `Digital currencies are like a box of chocolates. You never know what you are gonna get.`,
       },
     }),
 };
