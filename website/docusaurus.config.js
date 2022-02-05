@@ -61,7 +61,7 @@ const TwitterSvg =
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Gitcoins',
-  tagline: 'Build optimized websites quickly, focus on your content',
+  tagline: 'Digital currencies are like a box of chocolates. You never know what you're gonna get.',
   organizationName: 'TheBestOrNothing',
   projectName: 'thebestornothing.github.io',
   baseUrl,
@@ -342,10 +342,6 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        id: 'announcementBar-2', // Increment on change
-        content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus" >Twitter</a> ${TwitterSvg}`,
-      },
       prism: {
         // We need to load markdown again so that YAML is loaded before MD
         // and the YAML front matter is highlighted correctly.
@@ -362,7 +358,7 @@ const config = {
       },
       navbar: {
         hideOnScroll: true,
-        title: 'Docusaurus',
+        title: 'Gitcoins',
         logo: {
           alt: 'Docusaurus Logo',
           src: 'img/docusaurus.svg',
@@ -424,7 +420,7 @@ const config = {
             ],
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/TheBestOrNothing/thebestornothing.github.io',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
