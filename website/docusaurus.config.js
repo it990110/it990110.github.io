@@ -60,13 +60,13 @@ const TwitterSvg =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docusaurus',
+  title: 'Gitcoins',
   tagline: 'Build optimized websites quickly, focus on your content',
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'TheBestOrNothing',
+  projectName: 'thebestornothing.github.io',
   baseUrl,
   baseUrlIssueBanner: true,
-  url: 'https://docusaurus.io',
+  url: 'https://thebestornothing.github.io',
   // Dogfood both settings:
   // - force trailing slashes for deploy previews
   // - avoid trailing slashes in prod
