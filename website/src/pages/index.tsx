@@ -134,7 +134,7 @@ function Home(): JSX.Element {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      '<b>Digital currencies</b> are like a box of <b>chocolates</b>, you never know what you are gonna get',
+                      '<b>Digital currencies</b> are like a box of <b>chocolates</b>',
                     description:
                       'Home page hero title, can contain simple html tags',
                   }),
@@ -158,26 +158,6 @@ function Home(): JSX.Element {
                 />
               </span>
             </div>
-          </div>
-        </div>
-        <div className={clsx(styles.announcement, styles.announcementDark)}>
-          <div className={styles.announcementInner}>
-            <Translate
-              values={{
-                docusaurusV1Link: (
-                  <Link to="https://v1.docusaurus.io/">
-                    <Translate>Docusaurus v1</Translate>
-                  </Link>
-                ),
-                migrationGuideLink: (
-                  <Link to="/docs/migration">
-                    <Translate>v1 to v2 migration guide</Translate>
-                  </Link>
-                ),
-              }}>
-              {`Coming from {docusaurusV1Link}? Check out our {migrationGuideLink}`}
-            </Translate>
-            .
           </div>
         </div>
         <div className={styles.section}>
