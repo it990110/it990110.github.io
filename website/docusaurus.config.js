@@ -61,7 +61,7 @@ const TwitterSvg =
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Gitcoins',
-  tagline: 'Digital currencies are like a box of chocolates. You never know what you're gonna get.',
+  tagline: 'Digital currencies are like a box of chocolates',
   organizationName: 'TheBestOrNothing',
   projectName: 'thebestornothing.github.io',
   baseUrl,
