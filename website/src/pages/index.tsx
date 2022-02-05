@@ -134,7 +134,7 @@ function Home(): JSX.Element {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      'Build <b>optimized</b> websites <b>quickly</b>, focus on your <b>content</b>',
+                      '<b>Digital currencies</b> are like a box of <b>chocolates</b>, you never know what you are gonna get',
                     description:
                       'Home page hero title, can contain simple html tags',
                   }),
