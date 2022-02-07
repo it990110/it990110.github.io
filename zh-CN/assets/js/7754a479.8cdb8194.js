@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[26969],{10356:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-CN/blog/tags","slug":"/zh-CN/blog/tags/adoption","name":"adoption","count":2,"permalink":"/zh-CN/blog/tags/adoption"}')}}]);

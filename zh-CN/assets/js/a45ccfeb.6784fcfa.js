@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[20184],{5634:function(s){s.exports=JSON.parse('{"allTagsPath":"/zh-CN/blog/tags","slug":"/zh-CN/blog/tags/birth","name":"birth","count":1,"permalink":"/zh-CN/blog/tags/birth"}')}}]);
