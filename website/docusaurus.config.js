@@ -423,7 +423,7 @@ const config = {
           {
             href: 'https://github.com/TheBestOrNothing/thebestornothing.github.io',
             position: 'right',
-            className: 'header-github-link',
+            className: 'header-github-link-white',
             'aria-label': 'GitHub repository',
           },
         ],
