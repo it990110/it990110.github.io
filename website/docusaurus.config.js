@@ -87,7 +87,7 @@ const config = {
       ? // Staging locales: https://docusaurus-i18n-staging.netlify.app/
         ['en', 'ja']
       : // Production locales
-        ['en', 'fr', 'pt-BR', 'ko', 'zh-CN'],
+        ['en', 'zh-CN'],
   },
   webpack: {
     jsLoader: (isServer) => ({
