@@ -146,7 +146,7 @@ const config = {
           if (locale !== 'en') {
             return `https://crowdin.com/project/docusaurus-v2/${locale}`;
           }
-          return `https://github.com/facebook/docusaurus/edit/main/website/${versionDocsDirPath}/${docPath}`;
+          return `https://github.com/TheBestOrNothing/thebestornothing.github.io/edit/main/website/${versionDocsDirPath}/${docPath}`;
         },
         editCurrentVersion: true,
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
@@ -275,7 +275,7 @@ const config = {
             // We want users to submit doc updates to the upstream/next version!
             // Otherwise we risk losing the update on the next release.
             const nextVersionDocsDirPath = 'docs';
-            return `https://github.com/facebook/docusaurus/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
+            return `https://github.com/TheBestOrNothing/thebestornothing.github.io/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
           },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -304,7 +304,7 @@ const config = {
             if (locale !== 'en') {
               return `https://crowdin.com/project/docusaurus-v2/${locale}`;
             }
-            return `https://github.com/facebook/docusaurus/edit/main/website/${blogDirPath}/${blogPath}`;
+            return `https://github.com/TheBestOrNothing/thebestornothing.github.io/edit/main/website/${blogDirPath}/${blogPath}`;
           },
           postsPerPage: 5,
           feedOptions: {
