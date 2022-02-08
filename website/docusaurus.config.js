@@ -61,7 +61,7 @@ const TwitterSvg =
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Gitcoins',
-  tagline: 'Digital currencies are like a box of chocolates',
+  tagline: 'Digital Currencies',
   organizationName: 'TheBestOrNothing',
   projectName: 'thebestornothing.github.io',
   baseUrl,
@@ -406,10 +406,6 @@ const config = {
                   href: versionUrl,
                 }),
               ),
-              {
-                href: 'https://v1.docusaurus.io',
-                label: '1.x.x',
-              },
               {
                 to: '/versions',
                 label: 'All versions',
