@@ -150,6 +150,11 @@ const sidebars = {
       dirName: 'api',
     },
   ],
+  tls: [
+    "tls/ssl-tls-overview",
+    "tls/symmetric-cryptography",
+    "tls/asymmetric-cryptography",
+  ],
 };
 
 module.exports = sidebars;

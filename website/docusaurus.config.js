@@ -369,10 +369,16 @@ const config = {
         },
         items: [
           {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'tls',
+            label: 'TLS',
+          },
+          {
             type: 'doc',
             position: 'left',
             docId: 'introduction',
-            label: 'Docs',
+            label: 'Docus',
           },
           {
             type: 'docSidebar',
