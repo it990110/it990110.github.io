@@ -1,0 +1,54 @@
+# The cutting version will be triggered when commit this file.
+# Please double check and adapt the version number like 2.0.0-beta.16 before commit this file.
+name: Versioning
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/versioning.yml]
+  pull_request:
+    branches: [main]
+    paths: [.github/workflows/versioning.yml]
+
+jobs:
+  deploy:
+    name: New Version Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: yarn
+      - name: Installation
+        run: yarn
+      - name: Build website
+        working-directory: website
+        run: |
+          pwd
+          # 1. Git setup
+          git checkout main
+          git pull
+          git checkout -b thebestornothing/2.0.0-beta.16
+          # 2. Clean and install the yarn env
+          yarn clear
+          yarn install
+          # 3. Cut a new version of the docs
+          yarn workspace website docusaurus docs:version 2.0.0-beta.16
+          # 4. Build package and publish
+          yarn workspace website build
+          #yarn lerna publish --exact 2.0.0-beta.16
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Build output to publish to the `gh-pages` branch:
+          publish_dir: ./website/build
+          # Assign commit authorship to the official GH-Actions bot for deploys to `gh-pages` branch:
+          # https://github.com/actions/checkout/issues/13#issuecomment-724415212
+          # The GH actions bot is used by default if you didn't specify the two fields.
+          # You can swap them out with your own user credentials.
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
