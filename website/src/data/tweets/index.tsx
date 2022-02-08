@@ -20,7 +20,7 @@ const TWEETS: TweetItem[] = [
     name: 'Mark Erikson',
     date: 'Oct 26, 2021',
     avatar:
-      'profile_images/tFKLiJI5_400x400.jpg',
+      'img/profile_images/tFKLiJI5_400x400.jpg',
     content: (
       <>
         We&apos;ve been using Docusaurus for all the Redux org docs sites for
@@ -37,7 +37,7 @@ const TWEETS: TweetItem[] = [
     name: 'Maël',
     date: 'Jan 20, 2021',
     avatar:
-      'profile_images/7hPZqoJd_400x400.jpg',
+      'img/profile_images/7hPZqoJd_400x400.jpg',
     content: (
       <>
         I&apos;ve used Docusaurus for two websites this year, and I&apos;ve been
@@ -52,7 +52,7 @@ const TWEETS: TweetItem[] = [
     name: 'Max Lynch',
     date: 'Mar 25, 2021',
     avatar:
-      'profile_images/bln98FNj_400x400.jpg',
+      'img/profile_images/bln98FNj_400x400.jpg',
     content: (
       <>
         Docusaurus v2 doubles as a really nice little static site generator tool
@@ -67,7 +67,7 @@ const TWEETS: TweetItem[] = [
     name: 'Supabase',
     date: 'Nov 18, 2020',
     avatar:
-      'profile_images/jN-wuufb_400x400.jpg',
+      'img/profile_images/jN-wuufb_400x400.jpg',
     content: (
       <>
         We&apos;ve been using V2 since January and it has been great - we spend
@@ -85,7 +85,7 @@ const TWEETS: TweetItem[] = [
     name: 'Paul Armstrong',
     date: 'Apr 27, 2021',
     avatar:
-      'profile_images/C4KgET17_400x400.jpg',
+      'img/profile_images/C4KgET17_400x400.jpg',
     content: (
       <>
         Continue to be impressed and excited about Docusaurus v2 alpha releases.
@@ -101,7 +101,7 @@ const TWEETS: TweetItem[] = [
     name: 'sanketsahu',
     date: 'Nov 17, 2020',
     avatar:
-      'profile_images/aNZZgZME_400x400.jpg',
+      'img/profile_images/aNZZgZME_400x400.jpg',
     content: <>.@docusaurus ❤️</>,
     showOnHomepage: false,
   },
@@ -111,7 +111,7 @@ const TWEETS: TweetItem[] = [
     name: 'debs_obrien',
     date: 'Mar 24, 2021',
     avatar:
-      'profile_images/JLIVJ-TC_400x400.jpg',
+      'img/profile_images/JLIVJ-TC_400x400.jpg',
     content: (
       <>
         Been doing a lot of work with @docusaurus lately and I have to say it is
@@ -128,7 +128,7 @@ const TWEETS: TweetItem[] = [
     name: 'Dr.Electron',
     date: 'Oct 11, 2021',
     avatar:
-      'profile_images/nCWpKbYh_400x400.jpg',
+      'img/profile_images/nCWpKbYh_400x400.jpg',
     content: (
       <>
         The #IOTA wiki is now part of the @docusaurus showcase. We even have the
@@ -145,7 +145,7 @@ const TWEETS: TweetItem[] = [
     name: 'Kent C. Dodds',
     date: 'Nov 4, 2020',
     avatar:
-      'profile_images/IDffhy4i_400x400.jpg',
+      'img/profile_images/IDffhy4i_400x400.jpg',
     content: (
       <>
         http://testing-library.com just got a nice update! We&apos;re now on the
@@ -164,7 +164,7 @@ const TWEETS: TweetItem[] = [
     name: 'banteg',
     date: 'Nov 25, 2021',
     avatar:
-      'profile_images/fLQOnMbp_400x400.jpg',
+      'img/profile_images/fLQOnMbp_400x400.jpg',
     content: <>I like docusaurus much more, it&apos;s so snappy.</>,
     showOnHomepage: false,
   },
@@ -174,7 +174,7 @@ const TWEETS: TweetItem[] = [
     name: 'swyx',
     date: 'Jul 23, 2021',
     avatar:
-      'profile_images/iM2Hf8du_400x400.jpg',
+      'img/profile_images/iM2Hf8du_400x400.jpg',
     content: (
       <>
         Happy to share Temporal&apos;s first open source sponsorship — of
@@ -194,7 +194,7 @@ const TWEETS: TweetItem[] = [
     name: "R 'Nearest' Nabors 💙",
     date: 'Jan 5, 2022',
     avatar:
-      'profile_images/7soY-vhs_400x400.jpg',
+      'img/profile_images/7soY-vhs_400x400.jpg',
     content: <>I hear @docusaurus is a good tool for that!</>,
     showOnHomepage: false,
   },
@@ -204,7 +204,7 @@ const TWEETS: TweetItem[] = [
     name: 'Nader Dabit',
     date: 'May 19, 2021',
     avatar:
-      'profile_images/7soY-vhs_400x400.jpg',
+      'img/profile_images/7soY-vhs_400x400.jpg',
     content: (
       <>
         I did try Docusaurus, and I really liked it! Still investigating various
@@ -219,7 +219,7 @@ const TWEETS: TweetItem[] = [
     name: 'John Reilly',
     date: 'Dec 10, 2021',
     avatar:
-      'profile_images/rPdTN64o_400x400.jpeg',
+      'img/profile_images/rPdTN64o_400x400.jpeg',
     content: (
       <>
         I ❤️ @docusaurus - it makes it so easy to spin up docs, blogs and simple
@@ -238,7 +238,7 @@ const TWEETS: TweetItem[] = [
     name: 'Tim Post 💉💉💉',
     date: 'Aug 6, 2021',
     avatar:
-      'profile_images/59xAQG4y_400x400.jpg',
+      'img/profile_images/59xAQG4y_400x400.jpg',
     content: (
       <>
         Docusaurus is mind-bendingly flexible. <br />
@@ -257,7 +257,7 @@ const TWEETS: TweetItem[] = [
     name: 'Sebastien Lorber',
     date: 'Oct 29, 2020',
     avatar:
-      'profile_images/gKAusMeX_400x400.jpeg',
+      'img/profile_images/gKAusMeX_400x400.jpeg',
     content: (
       <>
         🥳🎊🥳🎊🥳🎊🥳🎊 The @reactnative website just migrated to @docusaurus
@@ -280,7 +280,7 @@ const TWEETS: TweetItem[] = [
     name: 'Ian Sutherland',
     date: 'Oct 16, 2019',
     avatar:
-      'profile_images/yzDVUVKY_400x400.jpg',
+      'img/profile_images/yzDVUVKY_400x400.jpg',
     content: (
       <>
         We just updated the Create React App docs to Docusaurus v2. Now with
@@ -301,7 +301,7 @@ const TWEETS: TweetItem[] = [
     name: 'Michel Weststrate',
     date: 'Oct 8, 2019',
     avatar:
-      'profile_images/NYGFeR-K_400x400.jpg',
+      'img/profile_images/NYGFeR-K_400x400.jpg',
     content: (
       <>
         New #mobx docs are online! More modern, fixing many UI issues.
@@ -322,7 +322,7 @@ const TWEETS: TweetItem[] = [
     name: 'verdaccio',
     date: 'Jul 28, 2021',
     avatar:
-      'profile_images/4khdTyVZ_400x400.png',
+      'img/profile_images/4khdTyVZ_400x400.png',
     content: (
       <>
         The new website has landed 🚀 powered by @docusaurus v2 and made by
@@ -340,7 +340,7 @@ const TWEETS: TweetItem[] = [
     name: 'Yangshun Tay',
     date: 'Jul 19, 2020',
     avatar:
-      'profile_images/3kuZJz5j_400x400.jpg',
+      'img/profile_images/3kuZJz5j_400x400.jpg',
     content: (
       <>
         I made a @docusaurus website for answers to the H5BP Front End Interview
@@ -357,7 +357,7 @@ const TWEETS: TweetItem[] = [
     name: 'Pierre-Gilles Leymarie',
     date: 'Mar 19, 2021',
     avatar:
-      'profile_images/pg5XF8rA_400x400.jpg',
+      'img/profile_images/pg5XF8rA_400x400.jpg',
     content: (
       <>
         Just upgraded our website to @docusaurus latest with
@@ -379,7 +379,7 @@ const TWEETS: TweetItem[] = [
     name: 'biazita',
     date: 'Jan 10, 2022',
     avatar:
-      'profile_images/UCzm0Zye_400x400.jpg',
+      'img/profile_images/UCzm0Zye_400x400.jpg',
     content: (
       <>
         Today I tried @docusaurus in a project, I really like the ease and speed
