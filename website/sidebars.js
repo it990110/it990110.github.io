@@ -154,6 +154,14 @@ const sidebars = {
     "tls/ssl-tls-overview",
     "tls/symmetric-cryptography",
     "tls/asymmetric-cryptography",
+    "tls/tls-handshake",
+    "tls/create-certificates",
+    "tls/openssl-labs",
+    "tls/openssl-server",
+    "tls/browser-authentication",
+    "tls/mutual-authentication",
+    "tls/grpc-auth-labs",
+    "tls/node-mutual-auth"
   ],
 };
 

@@ -1,6 +1,7 @@
 ---
+id: symmetric-cryptography
 title: Symmetric Cryptography
-description: 'Overview of symmetric cryptography'
+description: Overview of symmetric cryptography
 ---
 > Copyright: the following content is totally copy from the [TECHSCHOOL](https://dev.to/techschoolguru/a-complete-overview-of-ssl-tls-and-its-cryptographic-system-36pd).
 
