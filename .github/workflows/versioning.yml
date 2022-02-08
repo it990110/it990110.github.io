@@ -26,6 +26,7 @@ jobs:
         working-directory: website
         run: |
           pwd
+          ls
           # 1. Git setup
           git checkout main
           git pull
