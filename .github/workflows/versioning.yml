@@ -1,5 +1,5 @@
-# The cutting version will be triggered when commit this file.
-# Please double check and adapt the version number like 2.0.0-beta.16 before commit this file.
+# The cutting version action will be triggered when commit this file.
+# Please double check and adapt the variable of VERSION_NAME (like 2.0.0-beta.16) before commit this file.
 name: Versioning
 
 on:
@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [main]
     paths: [.github/workflows/versioning.yml]
+
+env:
+  VERSION_NAME: 2.0.0-beta.16
 
 jobs:
   deploy:
@@ -22,25 +25,39 @@ jobs:
           cache: yarn
       - name: Installation
         run: yarn
-      - name: Build website
+      - name: Cutting new version
         working-directory: website
         run: |
           pwd
           # 1. Git setup
           git checkout main
           git pull
-          git checkout -b thebestornothing/2.0.0-beta.16
+          git checkout -b thebestornothing/$VERSION_NAME
           # 2. Clean and install the yarn env
           yarn clear
           yarn install
           # 3. Cut a new version of the docs
-          yarn workspace website docusaurus docs:version 2.0.0-beta.16
-          # 4. Build package and publish
+          yarn workspace website docusaurus docs:version $VERSION_NAME
+      - name: Commit files
+        working-directory: website
+        run: |
+          # Push the new version code to main branch
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A && git commit -m "update to $VERSION_NAME"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      - name: Build package
+        working-directory: website
+        run: |
           yarn workspace website build
-          #yarn lerna publish --exact 2.0.0-beta.16
+          #yarn lerna publish --exact $VERSION_NAME
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
-      - name: Deploy to gh-pages branch
+      - name: Publish to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
