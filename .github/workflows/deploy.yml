@@ -19,11 +19,10 @@ jobs:
           node-version: 16
           cache: yarn
       - name: Installation
-        run: yarn
+        run: yarn install
       - name: Build website
         working-directory: website
         run: |
-          yarn install --frozen-lockfile
           yarn workspace website build
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus

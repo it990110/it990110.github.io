@@ -4,7 +4,10 @@ title: gRPC Auth Labs
 description: How to set up grpc authentication server
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
 
 > Copyright: the following content is adapt from the [TECHSCHOOL](https://dev.to/techschoolguru/how-to-secure-grpc-connection-with-ssl-tls-in-go-4ph).
 
@@ -83,8 +86,8 @@ Next step, I will show you how to secure our gRPC connection with server-side TL
 
 Let’s open [greeter_server.js](https://github.com/vulnsystem/OpenssLabs/blob/main/grpc-server-auth/greeter_server.js) file. I will add ca and server certificates and sever private key to create TLS credentials.
 
-<Tabs groupId="one-way-server" defaultValue="insecure" values={[ {label: 'Insecure', value: 'insecure'}, {label: 'server-auth', value: 'server-auth'} ]}>
-<TabItem value="insecure">
+<Tabs>
+<TabItem value="Insecure">
 
 ```
 function main() {
@@ -97,7 +100,7 @@ function main() {
 ```
 
 </TabItem>
-<TabItem value="server-auth">
+<TabItem value="Server-auth">
 
 ```
 function main() {
@@ -137,9 +140,8 @@ The reason is, client needs to make sure that it’s the right server it wants t
 
 Let’s open [greeter_client.js](https://github.com/vulnsystem/OpenssLabs/blob/main/grpc-server-auth/greeter_client.js) file and add the trusted ca certificates to client.
 
-<Tabs groupId="one-way-client" defaultValue="insecure" values={[ {label: 'Insecure', value: 'insecure'}, {label: 'server-auth', value: 'server-auth'} ]}>
-
-<TabItem value="insecure">
+<Tabs>
+<TabItem value="Insecure">
 
 ```
 var client = new hello_proto.Greeter(target,
@@ -147,7 +149,7 @@ var client = new hello_proto.Greeter(target,
 ```
 
 </TabItem>
-<TabItem value="server-auth">
+<TabItem value="Server-auth">
 
 ```
 var client = new hello_proto.Greeter(target,
@@ -167,13 +169,13 @@ node greeter_client.js
 
 This time the requests are successfully sent to the server. Perfect!
 
-<center><img src="/docs/assets/GettingStartedCongratulations.png" width="150"></img></center>
+<center><img src="/img/GettingStartedCongratulations.png" width="150"></img></center>
 
 ## Subject Alternative Name (SAN)
 
 There’s 1 thing I want to show you here. Remember that when we develop on localhost, It’s important to add the IP:0.0.0.0 as an Subject Alternative Name (SAN) extension to the certificate.
 
-<Tabs groupId="san" defaultValue="wIP" values={[ {label: 'With IP', value: 'wIP'}, {label: 'Without IP', value: 'wzIP'} ]}>
+<Tabs>
 <TabItem value="xIP">
 
 ```
@@ -227,8 +229,8 @@ Let’s say for this tutorial, we use the same CA to sign both server and client
 
 After the client’s certificate and private key are ready. To enable mutual TLS, on the server side [greeter_server.js](https://github.com/vulnsystem/OpenssLabs/blob/main/grpc-client-auth/greeter_server.js), we should change the ClientAuth field from False to True.
 
-<Tabs groupId="two-way-auth" defaultValue="mutual-auth" values={[ {label: 'mutual-auth', value: 'mutual-auth'}, {label: 'server-auth', value: 'server-auth'} ]}>
-<TabItem value="mutual-auth">
+<Tabs>
+<TabItem value="Mutual-auth">
 
 ```
 function main() {
@@ -249,7 +251,7 @@ function main() {
 ```
 
 </TabItem>
-<TabItem value="server-auth">
+<TabItem value="Server-auth">
 
 ```
 function main() {
@@ -278,8 +280,8 @@ Now if we connect the current client to this new server, it will fail because th
 
 Let’s go to the client code [greeter_client.js](https://github.com/vulnsystem/OpenssLabs/blob/main/grpc-client-auth/greeter_client.js) to fix this. I will just copy the code to load certificate on the server side and change the file names to client.cert and client.key.Then we have to add the client certificate to the TLS config by setting the Certificates field, just like what we did on the server side.
 
-<Tabs groupId="two-way-client" defaultValue="mutual-auth" values={[ {label: 'mutual-auth', value: 'mutual-auth'}, {label: 'server-auth', value: 'server-auth'} ]}>
-<TabItem value="mutual-auth">
+<Tabs>
+<TabItem value="Mutual-auth">
 
 ```
 var client = new hello_proto.Greeter(target,
@@ -289,7 +291,7 @@ var client = new hello_proto.Greeter(target,
 ```
 
 </TabItem>
-<TabItem value="server-auth">
+<TabItem value="Server-auth">
 
 ```
 var client = new hello_proto.Greeter(target,
@@ -301,7 +303,7 @@ var client = new hello_proto.Greeter(target,
 
 OK, now if we re-run the client, all the requests will be successful.
 
-<center><img src="/docs/assets/GettingStartedCongratulations.png" width="150"></img></center>
+<center><img src="/img/GettingStartedCongratulations.png" width="150"></img></center>
 
 ## Private key passphrase
 
