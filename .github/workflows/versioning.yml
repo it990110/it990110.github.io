@@ -24,7 +24,7 @@ jobs:
           node-version: 16
           cache: yarn
       - name: Installation
-        run: yarn
+        run: yarn install
       - name: Cutting new version
         working-directory: website
         run: |
@@ -33,28 +33,25 @@ jobs:
           git checkout main
           git pull
           git checkout -b thebestornothing/$VERSION_NAME
-          # 2. Clean and install the yarn env
-          yarn clear
-          yarn install
-          # 3. Cut a new version of the docs
+          # 2. Cut a new version of the docs
           yarn workspace website docusaurus docs:version $VERSION_NAME
+      - name: Build package
+        working-directory: website
+        run: |
+          yarn workspace website build
+          #yarn lerna publish --exact $VERSION_NAME
       - name: Commit files
         working-directory: website
         run: |
           # Push the new version code to main branch
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -A && git commit -m "update to $VERSION_NAME"
+          git add -A && git commit -m "Update to $VERSION_NAME"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-      - name: Build package
-        working-directory: website
-        run: |
-          yarn workspace website build
-          #yarn lerna publish --exact $VERSION_NAME
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Publish to gh-pages branch
