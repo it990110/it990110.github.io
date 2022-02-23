@@ -6,12 +6,34 @@ description: Overview of hash function
 A hash function is any function that can be used to map data of arbitrary size to fixed-size values. The values returned by a hash function are called hash values, hash codes, digests, or simply hashes. 
 
 ![asymmetric-overview](/img/tls/hash-functions.jpg)
+
+
+:::tip
+
 **Input and data like food**
+
+:::
+
 ![asymmetric-overview](/img/tls/food.jpg)
+
+
+:::tip
+
 **Hash Fucntion like digest**
+
+:::
+
 ![asymmetric-overview](/img/tls/digest.jpg)
+
+
+:::tip
+
 **Hash Value like excrement**
+
+:::
+
 ![asymmetric-overview](/img/tls/excrement.jpg)
+
 ## The properties of hash functions
 cryptographic hash functions exhibit these three properties:
 - They are “collision-free.” This means that no two input hashes should map to the same output hash. 

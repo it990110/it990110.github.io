@@ -152,6 +152,7 @@ const sidebars = {
   ],
   tls: [
     "tls/hash-function",
+    "tls/public-key-cryptography",
     "tls/ssl-tls-overview",
     "tls/symmetric-cryptography",
     "tls/asymmetric-cryptography",
