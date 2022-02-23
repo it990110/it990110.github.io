@@ -151,6 +151,7 @@ const sidebars = {
     },
   ],
   tls: [
+    "tls/hash-function",
     "tls/ssl-tls-overview",
     "tls/symmetric-cryptography",
     "tls/asymmetric-cryptography",
