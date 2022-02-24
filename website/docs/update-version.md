@@ -1,6 +1,6 @@
 ---
-id: add-files
-title: Add Files
+id: update-version
+title: Create New Version
 description: Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.
 ---
 
