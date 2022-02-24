@@ -1,6 +1,6 @@
 ---
 id: public-key-cryptography
-title: Public Key Cryptography Basic
+title: Public Key Cryptography
 description: Overview of hash functionPublic Key Cryptography
 ---
 Public-key cryptography, or asymmetric cryptography, is a cryptographic system that uses pairs of keys. Each pair consists of a public key (which may be known to others) and a private key (which may not be known by anyone except the owner). The generation of such key pairs depends on cryptographic algorithms which are based on mathematical problems termed one-way functions. ash function are called hash values, hash codes, digests, or simply hashes. 
