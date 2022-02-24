@@ -30,7 +30,7 @@ To follow the github page requment, the name of the repository should adapte to 
 ## Check the home page of website
 To open the website in broswer, you can see the README.md is loaded. Because the main branch is set defaultly in settings of Github Page.
 
-![homepage1](/img/docus/home1.png)
+![homepage1](/img/docus/homepage1.png)
 
 ## Adapt the source in the github pages
 Adapt the main to gh-pages brach in settings of Github Page. 
@@ -38,6 +38,6 @@ Adapt the main to gh-pages brach in settings of Github Page.
 
 ## Home page of website changed
 Then the index.html will be loaded when open the site.
-![homepage2](/img/docus/home2.png)
+![homepage2](/img/docus/homepage2.png)
 
 <center><img src="/img/GettingStartedCongratulations.png" width="150"></img></center>
