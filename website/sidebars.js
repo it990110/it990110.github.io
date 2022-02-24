@@ -17,6 +17,7 @@ const sidebars = {
     'add-files',
     'adapt-logo',
     'update-version',
+    'add-items',
     "introduction",
     {
       "type": "category",
