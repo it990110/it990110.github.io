@@ -5,6 +5,7 @@ description: Docusaurus was designed from the ground up to be easily installed a
 ---
 
 ⚡️ Docusaurus will help you ship a **beautiful documentation site in no time**.
+
 ⚡️ The site will be based on Github Page website.
 
 ![Github Page website](/img/docus/microsoft.png)
@@ -23,6 +24,8 @@ The docusaurus.io is one of repositories in Facebook, So the [repository](https:
 ![Fork Docusaurus](/img/docus/fork.png)
 
 ## Rename the Repository on Github
+GitHub Pages picks up deploy-ready files (the output from docusaurus build) from the default branch (master / main, usually) or the gh-pages branch, and either from the root or the /docs folder. You can configure that through Settings > Pages in your repository. This branch will be called the "deployment branch".
+
 To follow the github page requment, the name of the repository should adapte to thebestornothing.github.io in the settings page. ** Adapt thebestornothing to your orgniaztion name. **
 
 ![Rename Repository](/img/docus/rename.png)
