@@ -66,7 +66,7 @@ const config = {
   projectName: 'it990110.github.io',
   baseUrl,
   baseUrlIssueBanner: true,
-  url: 'https://thebestornothing.github.io',
+  url: 'https://it990110.github.io',
   // Dogfood both settings:
   // - force trailing slashes for deploy previews
   // - avoid trailing slashes in prod
