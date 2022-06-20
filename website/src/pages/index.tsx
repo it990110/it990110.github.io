@@ -28,13 +28,13 @@ const QUOTES = [
     thumbnail: require('../data/quotes/douyin.webp'),
     name: '抖音',
     title: translate({
-      id: 'homepage.quotes.christopher-chedeau.title',
-      message: 'Lead Prettier Developer',
+      id: 'gitcoins：52401884651.title',
+      message: '抖音号',
       description: 'Title of quote of Christopher Chedeau on the home page',
     }),
     text: (
       <Translate
-        id="homepage.quotes.christopher-chedeau"
+        id="gitcoins：52401884651"
         description="Quote of Christopher Chedeau on the home page">
         
       </Translate>
