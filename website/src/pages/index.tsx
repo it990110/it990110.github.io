@@ -25,8 +25,8 @@ import styles from './styles.module.css';
 
 const QUOTES = [
   {
-    thumbnail: require('../data/quotes/christopher-chedeau.jpg'),
-    name: 'Christopher "vjeux" Chedeau',
+    thumbnail: require('../data/quotes/douyin.webp'),
+    name: '抖音',
     title: translate({
       id: 'homepage.quotes.christopher-chedeau.title',
       message: 'Lead Prettier Developer',
@@ -36,11 +36,7 @@ const QUOTES = [
       <Translate
         id="homepage.quotes.christopher-chedeau"
         description="Quote of Christopher Chedeau on the home page">
-        I&apos;ve helped open source many projects at Facebook and every one
-        needed a website. They all had very similar constraints: the
-        documentation should be written in markdown and be deployed via GitHub
-        pages. I’m so glad that Docusaurus now exists so that I don’t have to
-        spend a week each time spinning up a new one.
+        
       </Translate>
     ),
   },
