@@ -26,10 +26,9 @@ import styles from './styles.module.css';
 const QUOTES = [
   {
     thumbnail: require('../data/quotes/douyin.webp'),
-    name: '抖音',
+    name: '抖音号',
     title: translate({
       id: 'gitcoins：52401884651.title',
-      message: '抖音号',
       description: 'Title of quote of Christopher Chedeau on the home page',
     }),
     text: (
@@ -41,39 +40,32 @@ const QUOTES = [
     ),
   },
   {
-    thumbnail: require('../data/quotes/hector-ramos.jpg'),
-    name: 'Hector Ramos',
+    thumbnail: require('../data/quotes/西瓜视频.jpg'),
+    name: '西瓜视频账号',
     title: translate({
-      id: 'homepage.quotes.hector-ramos.title',
-      message: 'Lead React Native Advocate',
-      description: 'Title of quote of Hector Ramos on the home page',
+      id: 'gitcoins.title',
+      description: 'Title of quote of Christopher Chedeau on the home page',
     }),
     text: (
       <Translate
-        id="homepage.quotes.hector-ramos"
-        description="Quote of Hector Ramos on the home page">
-        Open source contributions to the React Native docs have skyrocketed
-        after our move to Docusaurus. The docs are now hosted on a small repo in
-        plain markdown, with none of the clutter that a typical static site
-        generator would require. Thanks Slash!
+        id="gitcoins"
+        description="Quote of Christopher Chedeau on the home page">
+        
       </Translate>
     ),
   },
   {
-    thumbnail: require('../data/quotes/ricky-vetter.jpg'),
-    name: 'Ricky Vetter',
+    thumbnail: require('../data/quotes/douyin.webp'),
+    name: '抖音号',
     title: translate({
-      id: 'homepage.quotes.risky-vetter.title',
-      message: 'ReasonReact Developer',
-      description: 'Title of quote of Ricky Vetter on the home page',
+      id: 'gitcoins：52401884651.title',
+      description: 'Title of quote of Christopher Chedeau on the home page',
     }),
     text: (
       <Translate
-        id="homepage.quotes.risky-vetter"
-        description="Quote of Ricky Vetter on the home page">
-        Docusaurus has been a great choice for the ReasonML family of projects.
-        It makes our documentation consistent, i18n-friendly, easy to maintain,
-        and friendly for new contributors.
+        id="gitcoins：52401884651"
+        description="Quote of Christopher Chedeau on the home page">
+        
       </Translate>
     ),
   },
