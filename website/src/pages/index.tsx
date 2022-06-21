@@ -28,7 +28,7 @@ const QUOTES = [
     thumbnail: require('../data/quotes/douyin.webp'),
     name: '抖音号',
     title: translate({
-      id: 'gitcoins：52401884651.title',
+//       id: 'gitcoins：52401884651.title',
       description: 'Title of quote of Christopher Chedeau on the home page',
     }),
     text: (
@@ -40,10 +40,10 @@ const QUOTES = [
     ),
   },
   {
-    thumbnail: require('../data/quotes/西瓜视频.jpg'),
+    thumbnail: require('../data/quotes/3.jpg'),
     name: '西瓜视频账号',
     title: translate({
-      id: 'gitcoins.title',
+//       id: 'gitcoins.title',
       description: 'Title of quote of Christopher Chedeau on the home page',
     }),
     text: (
