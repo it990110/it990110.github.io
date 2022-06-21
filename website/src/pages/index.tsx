@@ -54,21 +54,21 @@ const QUOTES = [
       </Translate>
     ),
   },
-  {
-    thumbnail: require('../data/quotes/douyin.webp'),
-    name: '抖音号',
-    title: translate({
-      id: 'gitcoins：52401884651.title',
-      description: 'Title of quote of Christopher Chedeau on the home page',
-    }),
-    text: (
-      <Translate
-        id="gitcoins：52401884651"
-        description="Quote of Christopher Chedeau on the home page">
+//   {
+//     thumbnail: require('../data/quotes/douyin.webp'),
+//     name: '抖音号',
+//     title: translate({
+//       id: 'gitcoins：52401884651.title',
+//       description: 'Title of quote of Christopher Chedeau on the home page',
+//     }),
+//     text: (
+//       <Translate
+//         id="gitcoins：52401884651"
+//         description="Quote of Christopher Chedeau on the home page">
         
-      </Translate>
-    ),
-  },
+//       </Translate>
+//     ),
+//   },
 ];
 
 function TweetsSection() {
