@@ -25,7 +25,7 @@ import styles from './styles.module.css';
 
 const QUOTES = [
   {
-    thumbnail: require('../data/quotes/douyin.webp'),
+    thumbnail: require('../data/quotes/douyinerweima.png'),
     name: '抖音号',
     title: translate({
       id: 'gitcoins：52401884651',
@@ -40,7 +40,7 @@ const QUOTES = [
     ),
   },
   {
-    thumbnail: require('../data/quotes/3.jpg'),
+    thumbnail: require('../data/quotes/xiguaerweima.jpg'),
     name: '西瓜视频账号',
     title: translate({
       id: 'gitcoins',
