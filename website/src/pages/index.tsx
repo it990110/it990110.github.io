@@ -267,10 +267,10 @@ function Home(): JSX.Element {
                       img={quote.thumbnail}
                       style={{overflow: 'hidden'}}
                     />
-                    <div className="avatar__intro padding-top--sm">
-<!--                       <div className="avatar__name">{quote.name}</div> -->
+<!--                     <div className="avatar__intro padding-top--sm">
+                      <div className="avatar__name">{quote.name}</div>
                       <small className="avatar__subtitle">{quote.title}</small>
-                    </div>
+                    </div> -->
                   </div>
                   <p className="text--center text--italic padding-horiz--md">
                     {quote.text}
