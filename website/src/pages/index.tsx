@@ -33,7 +33,7 @@ const QUOTES = [
     }),
     text: (
       <Translate
-        id="gitcoins：52401884651"
+        id="详细视频内容请关注抖音:Gitcoins"
         description="Quote of Christopher Chedeau on the home page">
         
       </Translate>
@@ -48,7 +48,7 @@ const QUOTES = [
     }),
     text: (
       <Translate
-        id="gitcoins"
+        id="详细视频内容请关注西瓜视频:Gitcoins"
         description="Quote of Christopher Chedeau on the home page">
         
       </Translate>
@@ -267,10 +267,10 @@ function Home(): JSX.Element {
                       img={quote.thumbnail}
                       style={{overflow: 'hidden'}}
                     />
-<!--                     <div className="avatar__intro padding-top--sm">
+                    <div className="avatar__intro padding-top--sm">
                       <div className="avatar__name">{quote.name}</div>
                       <small className="avatar__subtitle">{quote.title}</small>
-                    </div> -->
+                    </div>
                   </div>
                   <p className="text--center text--italic padding-horiz--md">
                     {quote.text}
