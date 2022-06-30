@@ -263,9 +263,10 @@ function Home(): JSX.Element {
                   <div className="avatar avatar--vertical margin-bottom--sm">
                     <Image
                       alt={quote.name}
-                      className="avatar__photo avatar__photo--xl"
+<!--                       className="avatar__photo avatar__photo--xl" -->
                       img={quote.thumbnail}
-                      style={{overflow: 'hidden'}}
+                      width="1009.54"
+                      height="717.96"
                     />
                     <div className="avatar__intro padding-top--sm">
                       <div className="avatar__name">{quote.name}</div>
