@@ -6,11 +6,11 @@
  */
 
 .section {
-  padding: 72px 0;
+  padding: 90px 0;
 }
 .avatar__photo--xl {
-width: 300px !important;
-height: 300px !important;
+  width: 300px !important;
+  height: 300px !important;
 }
 .sectionAlt {
   background-color: var(--ifm-color-emphasis-100);
