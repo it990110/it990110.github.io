@@ -254,6 +254,8 @@ function Home(): JSX.Element {
             </div>
           </div>
         </div>
+        
+<!--                       className="avatar__photo avatar__photo--xl" -->
         <TweetsSection />
         <div className={clsx(styles.section)}>
           <div className="container">
@@ -263,7 +265,6 @@ function Home(): JSX.Element {
                   <div className="avatar avatar--vertical margin-bottom--sm">
                     <Image
                       alt={quote.name}
-<!--                       className="avatar__photo avatar__photo--xl" -->
                       img={quote.thumbnail}
                       width="1009.54"
                       height="717.96"
