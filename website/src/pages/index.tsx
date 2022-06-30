@@ -255,7 +255,7 @@ function Home(): JSX.Element {
           </div>
         </div>
         
-<!--                       className="avatar__photo avatar__photo--xl" -->
+
         <TweetsSection />
         <div className={clsx(styles.section)}>
           <div className="container">
